@@ -1,4 +1,4 @@
-export const CartItem = (data) => (
+export const CartItem = ({data}) => (
   <li className="cart-item">
     <img className="cart-item__image" src={data.image} alt={data.title} />
 
@@ -10,6 +10,7 @@ export const CartItem = (data) => (
         </button>
         <button className="cart-item__quantity-button cart-item__quantity-button_plus"></button>
       </div>
+      <p className="cart-item__price">{data.price}&nbsp;₽</p>
     </div>
   </li>
   );
