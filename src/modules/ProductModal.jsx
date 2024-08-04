@@ -1,5 +1,5 @@
 import Modal from "react-modal";
-import API_URL from "../const.js";
+import { API_URL } from "../const.js"
 
 const customStyles = {
   content: {
